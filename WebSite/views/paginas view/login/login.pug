@@ -1,0 +1,28 @@
+extends layouts
+block title
+  title Iniciar sesión
+block contenido
+  main#login.container
+    .row
+      .col.s6
+        .card.grey.lighten-1.center
+          .card-content
+            form(action="", method="post")
+              .input-field
+                label.black-text(for="correoLogin") Correo
+                input#correoLogin.white.validate(type="email")
+              .input-field
+                label.black-text(for="contrasenaLogin") Contraseña
+                input#contarsenaLogin.white.validate(type="password")
+                //- button.btn.waves-effect.waves-green.white.black-text(type="submit") Iniciar sesión
+                a.btn.waves-effect.waves-green.white.black-text(href="/inicio") Iniciar sesión
+              p registrar red social
+              #redesSocialesLogin
+                a(href="https://es-la.facebook.com/login/")
+                  img(src="img/icons/facebook-logo.png", alt="facebook-logo")
+                a(href="https://accounts.google.com/signin/v2/identifier?%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
+                  img(src="img/icons/google-logo.png", alt="google-logo")
+                a(href="https://mobile.twitter.com/login")
+                  img(src="img/icons/twitter-logo.png", alt="twitter-logo")
+            a.black-text(href="/autentificarse") ¿Olvidaste la contraseña?
+            

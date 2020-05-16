@@ -1,0 +1,11 @@
+#contentInventario{
+  padding: 4rem 0;
+  
+}
+#contentInventario thead{
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+#contentInventario textarea{
+  height: 8rem;
+}
